@@ -1,0 +1,108 @@
+h1 {
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkblue;
+    position: relative;
+}
+h1::after {
+    content: " | Votre partenaire digital";
+    font-size: 0.6em;
+    margin-left: 8px;
+    color: darkblue;
+}
+h2 {
+    font-style: italic;
+    text-align: center;
+    color: steelblue;
+}
+p.intro {
+    font-variant: small-caps;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-indent: 2em;
+    font-size: 16px;
+}
+p.intro::first-letter {
+    font-size: 2.5em;
+    color: blue;
+    font-weight: bold;
+}
+p.normal {
+    text-indent: 2em;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+p.important {
+    font-weight: bold;
+    color: darkred;
+    text-decoration: underline;
+}
+
+p.important::before {
+    content: "⚠️";
+    color: darkred;
+}
+
+p.important::after {
+    content: " Merci de votre attention.";
+    margin-left: 4px;
+    color: darkred;
+}
+ul li:first-child {
+    font-weight: bold;
+}
+
+ul li:last-child {
+    font-style: italic;
+}
+
+ul li:hover {
+    color: blue;
+    background-color: lightyellow;
+    cursor: pointer;
+}
+
+a:link {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightgreen;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+blockquote {
+    font-style: italic;
+    color: navy;
+    text-align: center;
+    position: relative;
+}
+
+blockquote::after {
+    content: "”";
+    margin-left: 4px;
+    color: navy;
+}
+.contact {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.contact::before {
+    content: "✉️";
+    color: black;
+}
